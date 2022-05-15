@@ -52,7 +52,7 @@ const query_input_authentication = (input)=>{
 
 const get_weather_api = (city) => {
     // get the api that will tell us the weather of the city by parsing the city that we input into the api
-    const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3b53e76cd1185cb1a33cee7e612fc4fb&units=metric`;
+    const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3b53e76cd1185cb1a33cee7e612fc4fb&units=metric`;
     
     
 // return the api
