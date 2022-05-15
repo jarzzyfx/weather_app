@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="weather_app">
+        <header>
+
+            <button class="back_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="back_btn" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-arrow-left-circle">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 8 8 12 12 16"></polyline>
+                    <line x1="16" y1="12" x2="8" y2="12"></line>
+                </svg>
+            </button>
+
+            <span class="title">Weather App</span>
+        </header>
+
+        <form method="" class="input_section active">
+
+            <span class="status_msg">you cannot access this pages</span>
+
+            <input type="text" class="" name="user_search" placeholder="Enter City Name">
+
+
+
+            <button class="btn location">
+                get Device Location
+            </button>
+
+        </form>
+
+        <div class="weather_result">
+            <div class="weather_temp">
+
+                <span class="weather_img">
+                    <img src="" alt="">
+                </span>
+
+                <h2 class="degree"><span></span> &deg C</h2>
+
+                <h3 class="weather_type"></h3>
+
+                <h4 class="country">
+                    <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    </span>
+                    <span class="country_name"></span>
+                </h4>
+
+            </div>
+
+            <div class="temparature">
+                <div class="temp temp_deg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thermometer">
+                        <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                    </svg>
+
+                    <span class="feels_like">
+                        <h5>Feels like</h5>
+                        <h4><span></span>&deg C</h4>
+                    </span>
+
+                </div>
+                <div class="temp temp_cel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-droplet">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg>
+                    <span class="humidity">
+                        <h5>humidity</h5>
+                        <h4><span></span>%</h4>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
